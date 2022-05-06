@@ -1,0 +1,42 @@
+@import "../../scss/variable", "../../scss/mixins";
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $cardNavBgColor;
+    // padding: 0.3rem;
+    // gap: 2rem;
+    a{
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        &:hover{
+            background-color: $backgroundColor;
+            color: $cardNavBgColor;
+        }
+
+    }
+}  
+
+@include media-xsm{
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        
+            }
+        }
+    
+
+@include media-sm{
+    .navbar{
+        flex-direction: row;
+        a{
+            padding: 1.3rem;
+            
+        }
+    }
+}
